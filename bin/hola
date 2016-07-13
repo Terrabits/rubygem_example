@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'hola_nbl'
+puts HolaNbl::Hola.hi(ARGV[0])
