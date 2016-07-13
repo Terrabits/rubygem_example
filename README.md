@@ -18,19 +18,37 @@ Files you expect to be included in your gem must be committed.
 bundle gem's gemspec creates a project with git and uses git
 to find relevant files.
 
-You might want to add .gem to .gitignore?
-
 ## console
 To load your gem into IRB without installing:
   $ ./bin/console
 
+## Tests
+To run tests:
+  $ rake [test]
+
+May want to add minitest reporters for pretty print
+In .gemspec:
+```ruby
+  spec.add_development_dependency "minitest-reporters"
+```
+
+In test/test_helper.rb:
+```ruby
+  require 'minitest/reporters'
+  MiniTest::Reporters.use!
+```
+
+## Rake tasks
+To get a list:
+  $ rake -T
+
 ## Build
-Build your gem:
-  $ gem build gem_name.gemspec
+Build your gem into pkg/:
+  $ rake build
 
 ## Install locally
 To install:
-  $ gem install gem_name-version.gem
+  $ rake install[:local]
 
 ## More info
 Sources of information:
