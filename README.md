@@ -1,6 +1,10 @@
-# HolaNbl
+# Gem Example
 
 Learning how to create gems
+
+# Name
+The gem itself is called hola_nbl per the gemspec example.
+See link below.
 
 ## Bundle gem preferences
 Preferences are stored in:
