@@ -2,7 +2,7 @@
 
 Learning how to create gems
 
-# Name
+## Name
 The gem itself is called hola_nbl per the gemspec example.
 See link below.
 
